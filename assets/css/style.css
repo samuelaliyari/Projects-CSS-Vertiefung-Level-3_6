@@ -1,0 +1,202 @@
+
+
+@font-face {
+    font-family: karla;
+    src: url(../font/Karla-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: karla_i;
+    src: url(../font/Karla-Italic-VariableFont_wght.ttf);
+}
+
+/* ====================================================================
+                                RESET
+=====================================================================*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* ====================================================================
+                                HEADER
+=====================================================================*/
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 60px;
+    font-size: 10px;
+}
+
+
+
+/* ====================================================================
+                                MAIN
+=====================================================================*/
+
+
+main {
+    padding-inline: 40px;
+}
+.big-image-box {
+    margin-bottom: 20px;
+}
+.text-holder {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.small-image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.small-image-holder {
+    margin-bottom: 20px;
+}
+
+img {
+    transition: all ease-in-out 300ms;
+}
+
+footer {
+    padding-inline: 40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+footer div:nth-of-type(1) {
+    grid-column: 1/ 3;
+}
+
+footer div:nth-of-type(3) {
+    grid-column: 4/ 6;
+}
+
+
+/* ====================================================================
+                            SCHRIFTARTEN
+=====================================================================*/
+
+
+h1 {
+    font-family: karla;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+nav ul {
+    font-family: karla;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+.text-holder h4, h5, p {
+    font-family: karla;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.text-holder h5 {
+    color: #848484;
+}
+
+footer h4 {
+    padding-block: 40px;
+    font-family: karla;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+footer h6 {
+    padding-bottom: 40px;
+    font-family: karla;
+    font-size: 12px;
+    font-weight: 400;
+    padding-right: 50px;
+    line-height: 20px;
+}
+
+footer  span{
+    font-weight: 700;
+}
+
+
+footer p {
+    font-family: karla;
+    font-size: 10px;
+    font-weight: 400;
+    color: #848484;
+}
+
+.contact a {
+    font-family: karla;
+    font-size: 10px;
+    font-weight: 400;
+    color: #323A45;
+    display: block;
+}
+
+.newsletter p {
+    padding-bottom: 40px;
+    font-family: karla_i;
+    font-size: 12px;
+    font-weight: 400;
+    padding-right: 50px;
+    line-height: 20px;
+    color: black;
+}
+
+.social a{
+    display: block;
+    font-family: karla;
+    font-size: 10px;
+    font-weight: 400;
+    color: #323A45;
+    padding-bottom: 2px;
+}
+
+/* ====================================================================
+                            Hover
+=====================================================================*/
+
+img:hover {
+    filter: opacity(0.85);
+}
